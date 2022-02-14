@@ -8,7 +8,7 @@
     "start": "nodemon index.js"
   },
   "keywords": [],
-  "author": "Prishita Ribadia",
+  "author": "Vishwa Mavani",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
