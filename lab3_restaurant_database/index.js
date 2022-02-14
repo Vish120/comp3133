@@ -10,7 +10,7 @@ app.use(express.json());
 // MongoDB Connection
 mongoose.Promise = global.Promise;
 mongoose
-    .connect('mongodb+srv://Prishita:Prishita36@comp3123.bj5ug.mongodb.net/Res?retryWrites=true&w=majority', {
+    .connect('mongodb+srv://Vish120:<password>@cluster0.7yumk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
