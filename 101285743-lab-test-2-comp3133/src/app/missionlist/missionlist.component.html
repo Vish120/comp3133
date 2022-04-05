@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="card mt-3 text-dark bg-light" style="width: 60rem;" *ngFor="let mission of missions">
+            <div class="card-body">
+                <img src="{{ mission.links.mission_patch_small }}" width="40vw" alt="" class="mb-3" >
+                <h5 class="card-title">{{ mission.mission_name }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ mission.launch_year }}</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a [routerLink]="['/mission', mission.flight_number]" class="card-link">Mission Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

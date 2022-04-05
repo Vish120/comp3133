@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row ml-5 mt-5">
+        <h2 class="mb-5">Mission Details</h2>
+
+        <img src="{{ mission.links.mission_patch_small }}" style="width: 150px;" alt="" class="mb-3" >
+        <p>
+          Mission Name: {{ mission.mission_name }}
+        </p>
+        <p>
+          Launch Year: {{ mission.launch_year }}
+        </p>
+        <p>
+          Launch Date in UTC: {{ mission.launch_date_utc }}
+        </p>
+        <p>
+            Rocket Name: {{ mission.rocket.rocket_name }}
+        </p>
+        <p>
+            Rocket type: {{ mission.rocket.rocket_type }}
+        </p>
+        <p>
+            Launch Site : {{ mission.launch_site.site_name }}
+        </p>
+        <p>
+            Details: {{ mission.details }}
+        </p>
+        <p>
+            Launch success: {{ mission.launch_success }}
+        </p>
+        <a [routerLink]="['/']" class="">Back Home</a>
+    </div>
+</div>
+
